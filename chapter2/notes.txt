@@ -1,0 +1,18 @@
+Socket life cycles:
+
+- Creating and destroying sockets
+-- zmq_socket
+-- zmq_close
+
+- Configuring sockets by setting options on them and checking them if necessary
+-- zmq_setsockopt
+-- zmq_getsockopt
+
+- Plugging sockets onto the network topology by creating zmq connections to and
+  from them. The server calls bind, clients call connect.
+-- zmq_bind
+-- zmq_connect
+
+- Using sockets to carry data by writing and receiving messages on them
+-- zmq_msg_send
+-- zmq_msg-recv
